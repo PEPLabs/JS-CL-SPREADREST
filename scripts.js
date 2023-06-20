@@ -21,7 +21,7 @@ function submitEmployee() {
 }
 
 
-// TODO: Refactor the function below to take in any amount of numbers and return the sum of all those numbers.
+// TODO: Refactor the function below to take in any amount of numbers and render the sum on the page.
 function sum(  ) {
     let sum = 0;
 
