@@ -24,7 +24,7 @@ public class SeleniumTest {
 
         // Create a new ChromeDriver instance
         webDriver = new ChromeDriver();
-        File file = new File("./../index.html");
+        File file = new File("./index.html");
 
         // Open the HTML file
         webDriver.get(file.getAbsolutePath());
