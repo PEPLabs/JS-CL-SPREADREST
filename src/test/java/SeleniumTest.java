@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 
@@ -15,14 +16,19 @@ public class SeleniumTest {
     @Before
     public void setUp() {
         // Set up ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+
+        // Get file
+        File file = new File("index.html");
+        String path = "file://" + file.getAbsolutePath();
 
         // Create a new ChromeDriver instance
-        webDriver = new ChromeDriver();
-        File file = new File("./index.html");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        webDriver = new ChromeDriver(options);
 
         // Open the HTML file
-        webDriver.get(file.getAbsolutePath());
+        webDriver.get(path);
     }
 
     @After
