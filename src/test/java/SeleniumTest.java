@@ -38,17 +38,15 @@ public class SeleniumTest {
     }
 
     @Test
-    public void testPageText() throws InterruptedException {
-        //setup
-        WebElement speechPart1 = webDriver.findElement(By.id("opening"));
-        String opening = "To be, or not to be, that is the question:";
-        WebElement speechPart2 = webDriver.findElement(By.id("theRest"));
-        String theRest = "Whether 'tis nobler in the mind to suffer";
+    public void testSum() throws InterruptedException {
+        WebElement sum = webDriver.findElement(By.id("sum"));
+        Assert.assertEquals("15", sum.getText());
+       }
 
-        Thread.sleep(6000);
-
-        Assert.assertEquals(opening, speechPart1.getText());
-        Assert.assertEquals(theRest, speechPart2.getText().substring(0, 41));
+    @Test
+    public void testEmployeeInfo() {
+        WebElement employeeInfo = webDriver.findElement(By.id("employeeInfo"));
+        Assert.assertEquals("Name: Smith, John - $89,000", employeeInfo.getText());
     }
 
 
