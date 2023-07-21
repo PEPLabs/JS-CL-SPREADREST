@@ -22,8 +22,8 @@ function submitEmployee() {
 
 
 // TODO: Refactor the function below to take in any amount of numbers and render the sum on the page.
-function sum(  ) {
-    let sum = 0;
+function sum( ...nums ) {
+    let sumNumbers = 0;
 
 
     sumElement.innerText = sum;
