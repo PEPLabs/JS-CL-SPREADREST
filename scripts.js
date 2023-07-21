@@ -22,11 +22,11 @@ function submitEmployee() {
 
 
 // TODO: Refactor the function below to take in any amount of numbers and render the sum on the page.
-function sum( ...nums ) {
+function sum(  ) {
     let sumNumbers = 0;
 
 
-    sumElement.innerText = sum;
+    sumElement.innerText = sumNumbers;
 }
 
 // This function takes in exactly three strings and renders that information on screen. You don't need to edit this function.
