@@ -1,0 +1,20 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/SeleniumTest.java",
+      "testCases": [
+        {
+          "methodName": "testSum",
+          "label": "Verify sum element value",
+          "description": "Finds the element with id 'sum' and asserts that its text equals '15'."
+        },
+        {
+          "methodName": "testEmployeeInfo",
+          "label": "Verify employee info display",
+          "description": "Finds the element with id 'employeeInfo' and asserts that it displays the expected employee details: 'Name: Smith, John - $89,000'."
+        }
+      ]
+    }
+  ]
+}
